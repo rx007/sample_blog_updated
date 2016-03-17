@@ -3,7 +3,7 @@
 :test: rspec
 :mock: none
 :script: jquery
-:renderer: slim
+:renderer: haml
 :stylesheet: scss
 :namespace: SampleBlogUpdated
 :migration_format: number

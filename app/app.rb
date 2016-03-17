@@ -12,7 +12,7 @@ module SampleBlogUpdated
     end
 
     get :about, :map => '/about_us' do
-      render :slim, "h1 This is a sample blog created to demonstrate how Padrino works!"
+      render :haml, "%h1 This is a sample blog created to demonstrate how Padrino works!"
     end
 
   end
