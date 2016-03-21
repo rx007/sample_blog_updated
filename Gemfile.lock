@@ -101,6 +101,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord (>= 3.1)
   bcrypt
+  builder
   haml
   padrino (= 0.13.1)
   rack-test
