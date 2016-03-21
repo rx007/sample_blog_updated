@@ -1,5 +1,5 @@
 xml.instruct!
-xml.rss "version" => "2.0", "xmlns:dc" => "http://purl.org/dc/elements/1.1/" do
+xml.rss "version" => "2.0", "xmlns:dc" => "http://dublincore.org/documents/dc-xml-guidelines/" do
   xml.channel do
     xml.title "Padrino Blog"
     xml.description "The fantastic padrino sample blog"
