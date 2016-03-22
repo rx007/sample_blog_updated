@@ -19,16 +19,27 @@ ActiveRecord::Base.configurations[:development] = {
 
 }
 
+postgres = URI.parse(ENV['DATABASE_URL'] || '')
 
 ActiveRecord::Base.configurations[:production] = {
   :adapter  => 'postgresql',
   :encoding => 'utf8',
-  :username => 'igivqddonbudft',
-  :password => '_-4Qrr9GEZ7tYx8lHMz2uJRAZy',
-  :host     => 'ec2-107-22-248-209.compute-1.amazonaws.com',
-  :database => 'd4n4bn185o136a',
+  :username => postgres.user,
+  :password => postgres.password,
+  :host     => postgres.host,
+  :database => postgres.path[1..-1],
   :port     => 5432
 }
+
+# ActiveRecord::Base.configurations[:production] = {
+#   :adapter  => 'postgresql',
+#   :encoding => 'utf8',
+#   :username => 'qsqrhctujjyioy',
+#   :password => '_lurVOusyuRrOa5TxJPPsOnld0',
+#   :host     => 'ec2-107-22-248-166.compute-1.amazonaws.com',
+#   :database => 'dfl2jbqk0hhvj9',
+#   :port     => 5432
+# }
 
 ActiveRecord::Base.configurations[:test] = {
   :adapter => 'sqlite3',
