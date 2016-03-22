@@ -19,10 +19,15 @@ ActiveRecord::Base.configurations[:development] = {
 
 }
 
-ActiveRecord::Base.configurations[:production] = {
-  :adapter => 'sqlite3',
-  :database => Padrino.root('db', 'sample_blog_updated_production.db')
 
+ActiveRecord::Base.configurations[:production] = {
+  :adapter  => 'postgresql',
+  :encoding => 'utf8',
+  :username => 'igivqddonbudft',
+  :password => '_-4Qrr9GEZ7tYx8lHMz2uJRAZy',
+  :host     => 'ec2-107-22-248-209.compute-1.amazonaws.com',
+  :database => 'd4n4bn185o136a'
+  :port     => 5432
 }
 
 ActiveRecord::Base.configurations[:test] = {
