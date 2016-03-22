@@ -31,6 +31,10 @@ gem 'rack-test', :require => 'rack/test', :group => 'test'
 gem 'padrino', '0.13.1'
 gem 'builder'
 
+group :production do
+  gem 'pg'
+end
+
 # Or Padrino Edge
 # gem 'padrino', :github => 'padrino/padrino-framework'
 
