@@ -21,7 +21,9 @@ gem 'bcrypt'
 gem 'sass'
 gem 'haml'
 
+group :development do
   gem 'sqlite3'
+end
 
 gem 'activerecord', '>= 3.1', :require => 'active_record'
 
