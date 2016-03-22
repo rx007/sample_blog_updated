@@ -20,8 +20,12 @@ gem 'rake'
 gem 'bcrypt'
 gem 'sass'
 gem 'haml'
+
+group :development do
+  gem 'sqlite3'
+end
+
 gem 'activerecord', '>= 3.1', :require => 'active_record'
-gem 'sqlite3'
 
 # Test requirements
 gem 'rspec', :group => 'test'
