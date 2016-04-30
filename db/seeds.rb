@@ -10,7 +10,7 @@ password  = "admin"
 
 shell.say ""
 
-account = Account.new(:email => email, :name => "Foo", :surname => "Bar", :password => password, :password_confirmation => password, :role => "admin")
+account = Account.new(:email => email, :name => "Padrino", :surname => "Admin", :password => password, :password_confirmation => password, :role => "admin")
 
 if account.valid?
   account.save
