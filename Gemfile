@@ -14,7 +14,7 @@ source 'https://rubygems.org'
 # gem 'oj'
 
 # Project requirements
-gem 'rake'
+gem 'rake', '>= 12.3.3'
 
 # Component requirements
 gem 'bcrypt'
@@ -25,14 +25,14 @@ group :development do
   gem 'sqlite3'
 end
 
-gem 'activerecord', '>= 3.1', :require => 'active_record'
+gem 'activerecord', '>= 4.2.6', :require => 'active_record'
 
 # Test requirements
 gem 'rspec', :group => 'test'
 gem 'rack-test', :require => 'rack/test', :group => 'test'
 
 # Padrino Stable Gem
-gem 'padrino', '0.13.1'
+gem 'padrino', '0.13.3.1'
 gem 'builder'
 
 group :production do
