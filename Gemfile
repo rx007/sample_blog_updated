@@ -25,7 +25,7 @@ group :development do
   gem 'sqlite3'
 end
 
-gem 'activerecord', '>= 3.1', :require => 'active_record'
+gem 'activerecord', '>= 7.1.5.2', :require => 'active_record'
 
 # Test requirements
 gem 'rspec', :group => 'test'
