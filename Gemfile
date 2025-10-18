@@ -29,10 +29,10 @@ gem 'activerecord', '>= 3.1', :require => 'active_record'
 
 # Test requirements
 gem 'rspec', :group => 'test'
-gem 'rack-test', :require => 'rack/test', :group => 'test'
+gem 'rack-test', '>= 0.7.0', :require => 'rack/test', :group => 'test'
 
 # Padrino Stable Gem
-gem 'padrino', '0.13.1'
+gem 'padrino', '0.13.3.1'
 gem 'builder'
 
 group :production do
